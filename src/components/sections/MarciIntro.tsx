@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator"
 export function MarciIntro() {
   return (
-  <section className="grid grid-cols-2 flex items-center">
+  <section className="grid grid-cols-1 md:grid-cols-2 flex items-center">
 <motion.div
   initial={{ opacity: 0, x: -30 }}
   whileInView={{ opacity: 1, x: 0 }}
