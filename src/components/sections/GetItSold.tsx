@@ -22,7 +22,7 @@ export function GetItSold() {
               The Standard
             </p>
             
-            <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl lg:text-7xl text-white font-medium tracking-tight leading-[1.05] mb-10">
+            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-medium tracking-tight leading-[1.05] mb-10">
               We don&apos;t just list it.<br/>
               <span className="italic text-white/70">We get it sold.</span>
             </h2>

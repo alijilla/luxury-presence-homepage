@@ -32,7 +32,7 @@ export function Hero() {
             The Ridge Realty Group
           </p>
           
-          <h1 className="font-[var(--font-cormorant)] text-7xl md:text-8xl lg:text-[9rem] text-white leading-[0.85] tracking-tight">
+          <h1 className="font-serif text-7xl md:text-8xl lg:text-[9rem] text-white leading-[0.85] tracking-tight">
             Pahrump <br/>
             <span className="italic text-white/90">Realtor.</span>
           </h1>

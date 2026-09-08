@@ -22,7 +22,7 @@ export function Stats() {
               transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
               className="flex flex-col items-center justify-center pt-10 md:pt-0"
             >
-              <div className="font-[var(--font-cormorant)] text-6xl md:text-7xl lg:text-8xl text-white font-light tracking-tighter mb-4">
+              <div className="font-serif text-6xl md:text-7xl lg:text-8xl text-white font-light tracking-tighter mb-4">
                 {stat.value}
               </div>
               <div className="text-[9px] uppercase tracking-[0.3em] font-semibold text-white/40">

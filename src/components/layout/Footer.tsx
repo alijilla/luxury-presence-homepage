@@ -13,7 +13,7 @@ export default function Footer() {
         
         {/* Logo Text */}
         <Link href="/" aria-label="Marci Metzger" className="group">
-          <h2 className="font-[var(--font-cormorant)] text-2xl text-white tracking-widest font-medium group-hover:opacity-70 transition-opacity duration-500">
+          <h2 className="font-serif text-2xl text-white tracking-widest font-medium group-hover:opacity-70 transition-opacity duration-500">
             MARCI METZGER
           </h2>
         </Link>
