@@ -41,7 +41,7 @@ export function MarciIntro() {
               The Agent
             </p>
             
-            <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl text-white font-medium tracking-tight leading-[1.1] mb-8">
+            <h2 className="font-[var(--font-playfair)] text-5xl md:text-6xl text-white font-medium tracking-tight leading-[1.1] mb-8">
               Marci J. Metzger
             </h2>
             

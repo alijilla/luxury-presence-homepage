@@ -50,7 +50,7 @@ export function SearchListings() {
             Listings
           </p>
 
-          <h2 className="mb-8 font-[var(--font-cormorant)] text-5xl font-medium tracking-tight text-white md:text-6xl">
+          <h2 className="mb-8 font-[var(--font-playfair)] text-5xl font-medium tracking-tight text-white md:text-6xl">
             Search Listings
           </h2>
 
@@ -239,7 +239,7 @@ export function SearchListings() {
               <p className="text-[10px] uppercase tracking-widest text-white/50 mb-3">
                 4 BEDS &middot; 5 BATHS &middot; 5,530 SQFT &middot; 80 ACRES
               </p>
-              <h3 className="font-[var(--font-cormorant)] text-4xl lg:text-5xl text-white mb-2 tracking-tight leading-[1.1]">
+              <h3 className="font-[var(--font-playfair)] text-4xl lg:text-5xl text-white mb-2 tracking-tight leading-[1.1]">
                 Custom Estate on 80 Acres
               </h3>
               <p className="text-sm text-white/60 font-light mb-8">
