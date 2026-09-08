@@ -41,7 +41,7 @@ export function SearchListings() {
 
   return (
     <section
-      id="listings"
+      id="featured"
       className="border-y border-white/5 bg-[#0a0a0a] py-32 lg:py-48"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -214,7 +214,7 @@ export function SearchListings() {
             <div className="lg:col-span-8 group relative aspect-[16/9] overflow-hidden bg-[#080808]">
               <Carousel className="w-full h-full" opts={{ loop: true }}>
                 <CarouselContent className="-ml-0 h-full">
-                  {["/g2.png", "/g7.png", "/g8.png", "/g9.png", "/g10.png"].map((src, index) => (
+                  {["/g6.png", "/g7.png", "/g8.png", "/g9.png", "/g10.png"].map((src, index) => (
                     <CarouselItem key={index} className="pl-0 relative aspect-[16/9] w-full h-full">
                       <Image
                         src={src}
@@ -258,8 +258,8 @@ export function SearchListings() {
 
           </div>
         </div>
-
       </div>
     </section>
+       
   );
 }

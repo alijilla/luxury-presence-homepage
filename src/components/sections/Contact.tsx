@@ -60,24 +60,12 @@ export function ContactForm() {
     setErrorMsg(null);
     setMessageSent(false);
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
-      });
-      
-      const data = await res.json();
+    // Mock API delay for frontend-only assignment
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      if (data.success) {
-        setMessageSent(true);
-        reset();
-      } else {
-        setErrorMsg(data.message ?? "Something went wrong.");
-      }
-    } catch (err) {
-      setErrorMsg("Failed to send message. Please try again.");
-    }
+    // Simulate successful submission
+    setMessageSent(true);
+    reset();
   }
 
   return (

@@ -44,7 +44,7 @@ export function GetItSold() {
           >
             <div className="relative aspect-square w-full max-w-lg mx-auto overflow-hidden bg-white/5">
               <Image
-                src="/g11.png"
+                src="/g12.png"
                 alt="Nevada Landscape"
                 fill
                 className="object-cover object-center grayscale opacity-80"
