@@ -1,91 +1,63 @@
-"use client"
-import { Card } from "@/components/ui/card"
+"use client";
+
 import { motion } from "motion/react";
-import Image from "next/image";
-import Link from "next/link";
+
+const services = [
+  {
+    num: "01",
+    title: "Buying",
+    desc: "Finding the perfect property requires patience, market insight, and aggressive negotiation. We guide you from initial search to closing.",
+  },
+  {
+    num: "02",
+    title: "Selling",
+    desc: "Targeted marketing, professional staging, and strategic pricing ensure your property commands the highest possible value in the current market.",
+  },
+  {
+    num: "03",
+    title: "Expertise",
+    desc: "Nearly thirty years of industry experience translates to a seamless, stress-free transaction, whether navigating complex contracts or unique properties.",
+  },
+];
+
 export function Services() {
   return (
-    <section className="border-y border-white/10 bg-black/40 backdrop-blur-sm">
-      <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 max-w-7xl mx-auto gap-4">
-
-        <Card className="rounded-lg border-0 bg-transparent p-12 text-center shadow-none transition-colors hover:bg-white/5">
-          <motion.div
-  initial={{ opacity: 0, y: -30 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="flex justify-center"
->
-  <div className="overflow-hidden rounded-[12px] shadow-2xl relative group">
-    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none" />
-    <Image
-      src="/marci.jpg"
-      alt="Marci J. Metzger"
-      width={1254}
-      height={1254}
-      quality={100}
-      className="h-[400px] w-[400px]  object-cover transition-transform duration-700 group-hover:scale-105"
-    />
-  </div>
-</motion.div>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.25em] text-white/50">
-            Real Estate Done Right
+    <section id="services" className="bg-[#0a0a0a] border-y border-white/5 py-32 lg:py-48">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        
+        <div className="mb-24 md:mb-32">
+          <p className="text-[10px] uppercase tracking-[0.3em] font-semibold text-white/50 mb-4">
+            Our Offerings
           </p>
-          <p className="text-secondary/60 tracking-[0.25em]">Nervous about your property adventure? Don&apos;t be. Whether buying or selling, our team ensures the best experience possible.</p>
-        </Card>
+          <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl text-white font-medium tracking-tight">
+            Services
+          </h2>
+        </div>
 
-        <Card className="rounded-none border-0 bg-transparent p-12 text-center shadow-none transition-colors hover:bg-white/5">
-         <motion.div
-  initial={{ opacity: 0, y: -30 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="flex justify-center"
->
-  <div className="overflow-hidden rounded-[12px] shadow-2xl relative group">
-    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none" />
-    <Image
-      src="/marci.jpg"
-      alt="Marci J. Metzger"
-      width={1254}
-      height={1254}
-      quality={100}
-      className="h-[400px] w-[400px]  object-cover transition-transform duration-700 group-hover:scale-105"
-    />
-  </div>
-</motion.div>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.25em] text-white/50">
-           Commercial & Residential
-          </p>
-          <p className="text-secondary/60 tracking-[0.25em]">Large or small, condo or mansion — fixer-upper or luxury build. We live, work, and play in this community.</p>
-    
-        </Card>
-
-        <Card className="rounded-none border-0 bg-transparent p-12 text-center shadow-none transition-colors hover:bg-white/5">
-          <motion.div
-  initial={{ opacity: 0, y: -30 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="flex justify-center"
->
-  <div className="overflow-hidden rounded-[12px] shadow-2xl relative group">
-    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none" />
-    <Image
-      src="/marci.jpg"
-      alt="Marci J. Metzger"
-      width={1254}
-      height={1254}
-      quality={100}
-      className="h-[400px] w-[400px]  object-cover transition-transform duration-700 group-hover:scale-105"
-    />
-  </div>
-</motion.div>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.25em] text-white/50">
-            Rely on Expertise
-          </p>
-          <p className="text-secondary/60 tracking-[0.25em]">Questions about affordability, credit, and loan options — trust us to connect you with the right people.</p>
-        </Card>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-12">
+          {services.map((service, idx) => (
+            <motion.div
+              key={service.num}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 1, delay: idx * 0.15, ease: "easeOut" }}
+              className="flex flex-col group"
+            >
+              <div className="flex items-baseline gap-6 mb-8 border-b border-white/10 pb-6 transition-colors duration-500 group-hover:border-white/40">
+                <span className="text-sm font-medium text-white/40 group-hover:text-white transition-colors duration-500">
+                  {service.num}
+                </span>
+                <h3 className="font-[var(--font-cormorant)] text-4xl text-white">
+                  {service.title}
+                </h3>
+              </div>
+              <p className="text-white/60 font-light text-sm leading-relaxed max-w-sm">
+                {service.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
 
       </div>
     </section>

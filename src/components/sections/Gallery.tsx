@@ -3,103 +3,86 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 
-const images = [
-  {
-    src: "/marci.jpg",
-    alt: "Pahrump Nevada landscape",
-  },
-  {
-    src: "/marci.jpg",
-    alt: "Pahrump Nevada",
-  },
-  {
-    src: "/marci.jpg",
-    alt: "Pahrump property",
-  },
-  {
-    src: "/marci.jpg",
-    alt: "Pahrump community",
-  },
-  {
-    src: "/marci.jpg",
-    alt: "Nevada desert landscape",
-  },
-  {
-    src: "/marci.jpg",
-    alt: "Pahrump home",
-  },
-];
-
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-white/20 py-24">
+    <section id="gallery" className="bg-black py-32 lg:py-48 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-
-        {/* Heading */}
-        <div className="mb-12 text-center">
-          <p className="text-xs uppercase tracking-[0.2em] text-white/50">
-            Gallery
+        
+        <div className="mb-20">
+          <p className="text-[10px] uppercase tracking-[0.3em] font-semibold text-white/50 mb-4">
+            The Lifestyle
           </p>
-
-          <h2 className="mt-4 font-[var(--font-cormorant)] text-5xl text-white md:text-6xl">
+          <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl text-white font-medium tracking-tight">
             Life in Pahrump
           </h2>
-
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-white/60">
-            Discover the landscapes, homes, and community that make
-            Pahrump a special place to call home.
-          </p>
         </div>
 
-        {/* Gallery */}
-        <div className="grid gap-4">
-
-          {/* Featured image */}
-          <motion.div
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          {/* Main Feature */}
+          <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-            className="group relative h-[450px] overflow-hidden"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="md:col-span-8 group relative aspect-[4/3] overflow-hidden bg-white/5"
           >
             <Image
-              src={images[0].src}
-              alt={images[0].alt}
+              src="/g4.png"
+              alt="Pahrump Nevada landscape"
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-[2000ms] group-hover:scale-105"
             />
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
           </motion.div>
 
-          {/* Smaller images */}
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+          {/* Side Portrait */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            className="md:col-span-4 group relative aspect-[3/4] md:aspect-auto h-full min-h-[300px] overflow-hidden bg-white/5"
+          >
+            <Image
+              src="/g1.png"
+              alt="Desert Lifestyle"
+              fill
+              className="object-cover object-top grayscale opacity-70 transition-transform duration-[2000ms] group-hover:scale-105"
+            />
+          </motion.div>
 
-            {images.slice(1).map((image, index) => (
-              <motion.div
-                key={image.src}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                className="group relative h-[220px] overflow-hidden"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+          {/* Bottom Left Square */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
+            className="md:col-span-5 group relative aspect-square overflow-hidden bg-white/5"
+          >
+            <Image
+              src="/g3.png"
+              alt="Pahrump Community"
+              fill
+              className="object-cover object-right grayscale transition-transform duration-[2000ms] group-hover:scale-105"
+            />
+          </motion.div>
 
-                <div className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
-              </motion.div>
-            ))}
+          {/* Bottom Right Wide */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            className="md:col-span-7 group relative aspect-[16/9] md:aspect-auto h-full min-h-[250px] overflow-hidden bg-white/5"
+          >
+            <Image
+              src="/g5.png"
+              alt="Nevada scenery"
+              fill
+              className="object-cover object-bottom transition-transform duration-[2000ms] group-hover:scale-105"
+            />
+          </motion.div>
 
-          </div>
         </div>
 
       </div>
