@@ -5,7 +5,9 @@ import {MarciIntro} from "@/components/sections/MarciIntro"
 import {Stats} from "@/components/sections/Stats"
 import  {ContactForm} from "@/components/sections/Contact"
 import { GetItSold } from "@/components/sections/GetItSold"
-
+import { Services } from "@/components/sections/Services"
+import { Gallery } from "@/components/sections/Gallery"
+import { SearchListings } from "@/components/sections/SearchListings"
 export default function Home() {
   return (
     <div>
@@ -17,6 +19,11 @@ export default function Home() {
          <MarciIntro />
          <Stats />
          <GetItSold/>
+         <section><Gallery /></section>
+         <SearchListings />
+         <section>
+          <Services />
+         </section>
         <section>
           <ContactForm />
         </section>
