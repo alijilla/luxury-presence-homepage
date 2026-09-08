@@ -12,7 +12,7 @@ export function Gallery() {
           <p className="text-[10px] uppercase tracking-[0.3em] font-semibold text-white/50 mb-4">
             The Lifestyle
           </p>
-          <h2 className="font-[var(--font-playfair)] text-5xl md:text-6xl text-white font-medium tracking-tight">
+          <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl text-white font-medium tracking-tight">
             Life in Pahrump
           </h2>
         </div>

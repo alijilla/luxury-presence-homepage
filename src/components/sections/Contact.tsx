@@ -79,7 +79,7 @@ export function ContactForm() {
         <div className="bg-[#080808] p-10 md:p-14 rounded-none border border-white/5 flex flex-col justify-between">
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-white/50 mb-8 font-semibold">Call or Visit</p>
-            <h2 className="font-[var(--font-playfair)] text-5xl md:text-6xl text-white font-medium tracking-tight leading-tight mb-6">
+            <h2 className="font-[var(--font-cormorant)] text-5xl md:text-6xl text-white font-medium tracking-tight leading-tight mb-6">
               Let&apos;s talk <br/>
               <span className="italic">real estate.</span>
             </h2>
@@ -91,19 +91,19 @@ export function ContactForm() {
           <div className="divide-y divide-white/10 border-t border-white/10">
             <div className="py-5">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1.5">Phone</p>
-              <p className="font-[var(--font-playfair)] text-xl text-white tracking-wide">206-919-6886</p>
+              <p className="font-[var(--font-cormorant)] text-xl text-white tracking-wide">206-919-6886</p>
             </div>
             <div className="py-5">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1.5">Office</p>
-              <p className="font-[var(--font-playfair)] text-xl text-white tracking-wide">The Ridge Realty Group</p>
+              <p className="font-[var(--font-cormorant)] text-xl text-white tracking-wide">The Ridge Realty Group</p>
             </div>
             <div className="py-5">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1.5">Address</p>
-              <p className="font-[var(--font-playfair)] text-xl text-white tracking-wide">3190 HW-160, Suite F<br/>Pahrump, Nevada 89048</p>
+              <p className="font-[var(--font-cormorant)] text-xl text-white tracking-wide">3190 HW-160, Suite F<br/>Pahrump, Nevada 89048</p>
             </div>
             <div className="pt-5 pb-2">
               <p className="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-1.5">Hours</p>
-              <p className="font-[var(--font-playfair)] text-xl text-white tracking-wide">Daily &middot; 8:00 AM–7:00 PM</p>
+              <p className="font-[var(--font-cormorant)] text-xl text-white tracking-wide">Daily &middot; 8:00 AM–7:00 PM</p>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export function ContactForm() {
           <div className="p-8 flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-t border-white/5 bg-[#080808] z-10">
             <div>
               <p className="text-[9px] uppercase tracking-[0.25em] text-white/50 mb-2 font-semibold">The Ridge Realty Group</p>
-              <p className="font-[var(--font-playfair)] text-3xl text-white tracking-wide">Pahrump, Nevada</p>
+              <p className="font-[var(--font-cormorant)] text-3xl text-white tracking-wide">Pahrump, Nevada</p>
             </div>
             <a href="https://www.google.com/maps?daddr=3190+HW-160,+Suite+F,+Pahrump,+Nevada+89048,+United+States" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="rounded-none border-white/20 bg-transparent text-white hover:bg-white hover:text-black text-[10px] uppercase tracking-widest font-semibold px-6 py-5">

@@ -69,7 +69,7 @@ function Navbar() {
           </SheetTrigger>
 
           <SheetContent side="top" className="flex flex-col items-center justify-center py-20 bg-black/95 border-none">
-            <h2 className="font-[var(--font-playfair)] text-3xl text-white tracking-widest font-medium mb-12">
+            <h2 className="font-[var(--font-cormorant)] text-3xl text-white tracking-widest font-medium mb-12">
               MARCI METZGER
             </h2>
             <ul className="flex flex-col gap-8 text-center">
