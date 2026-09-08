@@ -3,6 +3,8 @@ import Footer from "@/components/layout/Footer"
 import Hero from "@/components/sections/Hero"
 import {MarciIntro} from "@/components/sections/MarciIntro"
 import {Stats} from "@/components/sections/Stats"
+import  {ContactForm} from "@/components/sections/Contact"
+import { GetItSold } from "@/components/sections/GetItSold"
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
         </section>
          <MarciIntro />
          <Stats />
-        <section></section>
-        <section></section>
+         <GetItSold/>
+        <section>
+          <ContactForm />
+        </section>
 
         <footer>
           <Footer />

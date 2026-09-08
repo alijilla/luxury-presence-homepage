@@ -20,7 +20,7 @@ export function MarciIntro() {
       width={2508}
       height={2508}
       quality={100}
-      className="h-[350px] w-[350px] object-cover round-[100px]"
+      className="h-[350px] w-[350px] object-cover rounded-md"
     />
   </div>
 </motion.div>
