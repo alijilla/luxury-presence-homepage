@@ -220,7 +220,7 @@ export function SearchListings() {
                         src={src}
                         alt={`4751 W Adkisson Street - Image ${index + 1}`}
                         fill
-                        className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-[2000ms] ease-out"
+                        className="object-cover object-center md:grayscale hover:grayscale-0 transition-all duration-[2000ms] ease-out"
                       />
                     </CarouselItem>
                   ))}

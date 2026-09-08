@@ -22,7 +22,7 @@ export function MarciIntro() {
                 src="/marci.jpg"
                 alt="Marci Metzger - Pahrump Realtor"
                 fill
-                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-1000 ease-out"
+                className="object-cover object-top md:grayscale hover:grayscale-0 transition-all duration-1000 ease-out"
               />
             </div>
             {/* Minimalist decorative line */}
