@@ -9,6 +9,8 @@ import {
   SheetContent,
 } from "@/components/ui/sheet";
 
+import Image from "next/image";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,10 +27,14 @@ function Navbar() {
     <header className="absolute top-0 left-0 w-full z-50 pt-8 pb-4">
       {/* Desktop */}
       <nav className="hidden md:flex items-center justify-between max-w-7xl mx-auto px-6 lg:px-8">
-        <Link href="/" aria-label="Marci Metzger" className="group">
-          <h1 className="font-[var(--font-cormorant)] text-2xl lg:text-3xl text-white tracking-widest font-medium group-hover:opacity-70 transition-opacity duration-500">
-            MARCI METZGER
-          </h1>
+        <Link href="/" aria-label="Marci Metzger" className="group flex items-center gap-4">
+          <Image 
+            src="/marci_logo_original.png" 
+            alt="Marci Metzger Homes Logo" 
+            width={200} 
+            height={60} 
+            className="w-auto h-8 lg:h-10 invert object-contain" 
+          />
         </Link>
 
         <ul className="flex items-center gap-10">
@@ -47,10 +53,14 @@ function Navbar() {
 
       {/* Mobile */}
       <div className="md:hidden flex items-center justify-between px-6">
-        <Link href="/" aria-label="Marci Metzger">
-          <h1 className="font-[var(--font-cormorant)] text-2xl text-white tracking-widest font-medium">
-            MARCI METZGER
-          </h1>
+        <Link href="/" aria-label="Marci Metzger" className="flex items-center gap-3">
+          <Image 
+            src="/marci_logo_original.png" 
+            alt="Marci Metzger Homes Logo" 
+            width={150} 
+            height={50} 
+            className="w-auto h-7 invert object-contain" 
+          />
         </Link>
 
         <Sheet open={isOpen} onOpenChange={setIsOpen}>

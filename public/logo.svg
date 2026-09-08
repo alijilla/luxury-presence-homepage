@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#080808"/>
+  <path d="M30 90 V30 L60 75 L90 30 V90" fill="none" stroke="white" stroke-width="3" stroke-linejoin="miter" stroke-miterlimit="10"/>
+  <line x1="20" y1="90" x2="40" y2="90" stroke="white" stroke-width="3"/>
+  <line x1="20" y1="30" x2="40" y2="30" stroke="white" stroke-width="3"/>
+  <line x1="80" y1="90" x2="100" y2="90" stroke="white" stroke-width="3"/>
+  <line x1="80" y1="30" x2="100" y2="30" stroke="white" stroke-width="3"/>
+</svg>
